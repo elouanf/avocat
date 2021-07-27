@@ -33,6 +33,16 @@ nav {
     align-items: center;
 
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.7s ease-in-out;
+}
+
+.navButton {
+
+    display: none;
+    cursor: pointer;
+
+
 }
 
 nav a {
@@ -808,6 +818,8 @@ height: auto;
 
     transition: all 0.4s ease-in-out;
 
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
+
 }
 
 .avocatLink img {
@@ -924,6 +936,14 @@ footer a {
 
     }
 
+    .aboutLink {
+
+        bottom: 10%;
+    
+       }
+
+    
+
 
 }
 
@@ -933,9 +953,222 @@ footer a {
     nav {
 
         flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        height: 100%;
+
+        background-color: #f1f1f1;
+        
+        transform: translateX(-100%);
 
     }
- 
+
+    .show {
+
+        transform: translateX(0);
+
+    }
+
+    nav a {
+
+        color: black;
+        height: 80px;
+        line-height: 80px;
+
+        border-bottom: 1px solid grey;
+    }
+
+    .navButton {
+
+        display: block;
+
+        position: fixed;
+        top: 10px;
+        left: 10px;
+
+        z-index: 5;
+        background-color: transparent;
+        border: none;
+
+        
+    transition: all 0.7s ease-in-out;
+
+    }
+
+    .burgerShow {
+
+       left: 85%;
+
+    }
+
+
+
+    .navButton img {
+
+
+        width: 60px;
+        height: 60px;
+
+    }
+
+    header h1 {
+
+        font-size: 30px;
+        margin: 0 20px;
+
+    }
+
+    .headerIcon {
+
+        width: 150px;
+
+    }
+
+    .aboutSection h2 {
+
+        font-size: 27px;
+        width: 85%;
+
+    }
+
+    .aboutSection h3 {
+
+        align-self: unset;
+
+    }
+
+    .aboutMission {
+
+        width: 88%;
+
+    }
+
+    .skillContainer {
+
+        justify-content: center;
+
+    }
+
+    .skills h2 {
+
+        font-size: 30px;
+        margin: 40px 0px;
+        text-decoration: underline;
+
+    }
+
+    .skillIcon {
+
+        width: 120px;
+        height: 120px;
+
+        margin: 10px;
+
+    }
+
+    .skillTextContent {
+
+        width: 90%;
+
+    }
+
+    .skillTextContent h3 {
+
+        text-align: center;
+        align-self: center;
+
+    }
+
+    .skillTextContent p {
+
+        font-size: 21px;
+        line-height: 32px;
+
+    }
+
+
+    .firstHonorairesContent {
+
+        width: 92%;
+
+        margin: 20px 0;
+
+    }
+
+    .honorairesItems h4 {
+
+        line-height: 30px;
+        min-height: 30px;
+
+    }
+
+    .honorairesItems p {
+
+        text-align: center;
+
+    }
+
+
+    .avocatForm a {
+
+        text-align: center;
+
+    }
+
+    .infoContact {
+
+        width: 99%;
+
+    }
+
+    .infoContact ul{
+
+        align-items: center;
+
+    }
+
+    .contact h3 {
+
+        margin: 25px 0;
+
+    }
+
+    .infoContact ul li {
+
+        margin: 20px 0;
+        justify-content: center;
+
+        width: 99%;
+
+        
+
+    }
+
+    .infoContact img {
+
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .footerRowContainer {
+
+        align-items: center;
+
+    }
+
+    footer h3 {
+
+        font-size: 28px;
+        margin: 20px 0;
+
+    }
+
+    footer li {
+
+        text-align: center;
+
+    }
  
  }
 
@@ -943,11 +1176,7 @@ footer a {
 @media screen and (max-width: 550px) {
 
 
-   .aboutLink {
-
-    bottom: 15%;
-
-   }
+   
 
 
 }
