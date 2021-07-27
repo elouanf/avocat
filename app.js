@@ -4,12 +4,13 @@ function toggleMenu () {
     const burger = document.querySelector('.navButton');
 
     const navlink = document.querySelectorAll('.navLink');
+    const clickOut = document.querySelector('.out');
 
     burger.addEventListener('click', () => {
 
         navbar.classList.toggle('show');
         burger.classList.toggle('burgerShow');
-
+        
     })
 
     navlink.forEach((e) => {
@@ -20,6 +21,15 @@ function toggleMenu () {
             burger.classList.toggle('burgerShow');
 
         })
+
+
+        clickOut.addEventListener('click', () => {
+
+            navbar.classList.remove('show');
+            burger.classList.remove('burgerShow');
+
+        })
+        
 
 
     })
