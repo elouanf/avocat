@@ -23,7 +23,7 @@ nav {
     width: 100%;
     height: 40px;
 
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #222;
 
     z-index: 10;
 
@@ -33,6 +33,7 @@ nav {
     align-items: center;
 
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 10px;
 
     transition: all 0.7s ease-in-out;
 }
@@ -51,10 +52,28 @@ nav a {
     line-height: 40px;
 
     font-size: 22px;
-    color: white;
+    color: #f1f1f1;
     text-decoration: none;
 
     margin: 10px;
+    padding: 0 8px;
+
+    transition: all 0.2s ease-in-out;
+
+    border: 0.5px solid transparent;
+    
+
+
+}
+
+nav a:hover {
+
+   
+    border-right: 0.5px solid rgb(163, 161, 161);
+    border-left: 0.5px solid rgb(163, 161, 161);
+
+    color: rgb(163, 161, 161);
+
 
 }
 
@@ -186,9 +205,8 @@ header h2 {
     
     width: 180px;
     height: 55px;
-    border-radius: 35px;
 
-    background-color: #e98834;
+    background-color: #5e1128;
     
 
     box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3),
@@ -258,8 +276,7 @@ header h2 {
     align-items: center;
     flex-wrap: wrap;
 
-    background-image: linear-gradient(315deg, rgba(78,78,78, 0.07) 0%, rgba(78,78,78, 0.07) 12.5%,rgba(76, 76, 76,0.07) 12.5%, rgba(76, 76, 76,0.07) 25%,rgba(102, 102, 102,0.07) 25%, rgba(102, 102, 102,0.07) 37.5%,rgba(129, 129, 129,0.07) 37.5%, rgba(129, 129, 129,0.07) 50%,rgba(155, 155, 155,0.07) 50%, rgba(155, 155, 155,0.07) 62.5%,rgba(182, 182, 182,0.07) 62.5%, rgba(182, 182, 182,0.07) 75%,rgba(208, 208, 208,0.07) 75%, rgba(208, 208, 208,0.07) 87.5%,rgba(235, 235, 235,0.07) 87.5%, rgba(235, 235, 235,0.07) 100%),linear-gradient(225deg, rgba(5, 5, 5,0.07) 0%, rgba(5, 5, 5,0.07) 12.5%,rgba(39, 39, 39,0.07) 12.5%, rgba(39, 39, 39,0.07) 25%,rgba(73, 73, 73,0.07) 25%, rgba(73, 73, 73,0.07) 37.5%,rgba(107, 107, 107,0.07) 37.5%, rgba(107, 107, 107,0.07) 50%,rgba(141, 141, 141,0.07) 50%, rgba(141, 141, 141,0.07) 62.5%,rgba(175, 175, 175,0.07) 62.5%, rgba(175, 175, 175,0.07) 75%,rgba(209, 209, 209,0.07) 75%, rgba(209, 209, 209,0.07) 87.5%,rgba(243, 243, 243,0.07) 87.5%, rgba(243, 243, 243,0.07) 100%),linear-gradient(270deg, #ffffff,#ffffff);
-
+    background-color: #5e1128;
     box-shadow: 1px 1px 4px  rgba(0, 0, 0, 0.3),
                 inset 1px 1px 4px  rgba(0, 0, 0, 0.3);
 
@@ -275,13 +292,15 @@ width: 60%;
 text-align: center;
 
 padding-bottom: 8px;
-border-bottom: 1px solid black;
+border-bottom: 1px solid #8C183A;
+
+color: #cccbcb;
 }
 
 .aboutSection h3 {
 
     font-size: 22px;
-    color: #424242;
+    color: #979696;
     
     width: 60%;
     text-align: center;
@@ -303,46 +322,55 @@ border-bottom: 1px solid black;
 
 .aboutMission {
 
-    width: 60%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-
+border-right: 1px solid #8C183A;
+max-width: 100%;
+padding-right: 20px;
     
 }
 
 .aboutMission img{
 
-    width: 250px;
-    margin: 10px;
+    width: 220px;
+    height: 220px;
+    margin: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #811133;
+    shape-outside: circle(50%);
+    float: left;
+}
+
+.aboutMission p {
+
+    max-width: 100%;
+    width: 600px;
+
+    margin: 20px 0;
     
-}
+    text-align: justify;
 
-.aboutMissionText {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    width: 55%;
-
-    margin: 10px;
+    color: #aaa9a9;
 
 }
 
-.aboutMissionText h4 {
+.aboutMission p:first-of-type {
 
-    font-size: 24px;
+    margin: 30px 0;
+
+}
+
+.aboutMission h4 {
+
+    font-size: 26px;
+    height: auto;
+
+    color: #c9c4c4;
 
 }
 
 .aboutMissionText span {
 
-    color: #e98834;
+    
     font-weight: bold;
 
 
@@ -375,7 +403,8 @@ border-bottom: 1px solid black;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
+    background-color: rgb(245, 239, 239);
+
 
 }
 
@@ -418,12 +447,33 @@ height: auto;
 
     margin: 20px 15px;
 
-    background-color: white;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3),
-                -1px -1px 4px rgba(0, 0, 0, 0.2);
+
+    background: linear-gradient(to right, white, 32%, #5e1128 32%);
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5),
+                -1px -1px 8px rgba(255, 255, 255, 0.3);
 
                 border-radius: 5px;
 }
+
+.skillContainer:nth-child(even) {
+
+    background: linear-gradient(to right, #5e1128, 68%,white  68%);
+
+}
+
+.lastSkill {
+
+    
+    background: linear-gradient(to right, white, 32%, #5e1128 32%)!important;
+
+}
+
+.skillContainer h3, .skillContainer p {
+
+    color: white;
+
+}
+
 
 .skillTextContent {
 
@@ -560,7 +610,7 @@ height: auto;
 
 .honorairesItems p {
 
-    background-color: #e98834;
+    background-color: #8C183A;
     color: #f1f1f1;
     font-size: 18px;
     font-weight: bold;
@@ -611,6 +661,7 @@ height: auto;
     text-decoration: underline;
 
     margin: 10px 0;
+    color: #f1f1f1;
 
 }
 
@@ -634,7 +685,7 @@ height: auto;
     margin: 25px 45px;
     padding: 0 15px;
 
-    background-color: white;
+    background-color: #5e1128;
 
     border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
@@ -643,12 +694,14 @@ height: auto;
 
     font-size: 20px;
     line-height: 30px;
+    color: #c9c4c4;
 
 }
 
 .firstHonorairesContainer li {
 
     font-size: 20px;
+    color: #c9c4c4;
 
 }
 
@@ -665,6 +718,19 @@ height: auto;
     margin: 15px 0;
 
 }
+
+
+.actus {
+
+    position: relative;
+
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+
+}
+
+
 
 .contact {
     background-image: linear-gradient(112.5deg, rgb(185,185,185) 0%, rgb(185,185,185) 10%,rgb(185,185,185) 10%, rgb(185,185,185) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(157.5deg, rgb(185,185,185) 0%, rgb(185,185,185) 10%,rgb(185,185,185) 10%, rgb(185,185,185) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(135deg, rgb(185,185,185) 0%, rgb(185,185,185) 10%,rgb(185,185,185) 10%, rgb(185,185,185) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(90deg, rgb(185,185,185),rgb(146,146,146)); background-blend-mode:overlay,overlay,overlay,normal;
@@ -806,7 +872,7 @@ height: auto;
     margin: 20px 0;
     padding: 0 10px;
 
-    background-color: #e98834;
+    background-color: #5e1128;
     border-radius: 25px;
 
     align-self: center;
@@ -853,6 +919,8 @@ footer {
     align-items: center;
     flex-wrap: wrap;
 
+    background-color: #5e1128;
+
 }
 
 .footerRowContainer {
@@ -882,13 +950,14 @@ footer li {
 
     font-size: 20px;
     margin: 8px 0;
+    color: white;
 
 }
 
 footer h3 {
 
     font-size: 22px;
-    color: rgb(88, 88, 88);
+    color: #f1f1f1;
 
 }
 
@@ -899,15 +968,13 @@ footer img {
 
     margin-right: 10px;
 
-
 }
 
 footer a {
 
 
   font-size: 20px;
-  color: black;
-
+  color: white;
   margin: 0 15px;
 }
 
@@ -942,12 +1009,26 @@ footer a {
     
        }
 
-    
+
+}
+
+@media screen and (max-width: 620px){
+
+
+    .aboutMission {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
 
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
 
 
     nav {
@@ -1047,6 +1128,20 @@ footer a {
 
         justify-content: center;
 
+        background: linear-gradient(to bottom, white, 48%, #5e1128 48%);
+
+    }
+
+    .skillContainer:nth-child(even) {
+
+        background: linear-gradient(to top, white, 46%, #5e1128 46%);
+
+    }
+
+    .lastSkill {
+
+
+        background: linear-gradient(to bottom, white, 44%, #5e1128 44%)!important;
     }
 
     .skills h2 {
@@ -1054,6 +1149,8 @@ footer a {
         font-size: 30px;
         margin: 40px 0px;
         text-decoration: underline;
+
+        text-align: center;
 
     }
 
@@ -1191,5 +1288,74 @@ footer a {
 
     }
 
+
+}
+
+@media screen and (max-width: 420px)  {
+
+.h2 .honorairesItems h4, .h2 .honorairesItems p {
+
+    text-align: center;
+    
+}
+
+.h2 .honorairesItems p {
+
+background-color: #8C183A;
+color: #c9c4c4;
+
+}
+
+.contact {
+
+    padding: 20px 0;
+
+}
+
+.avocatLink {
+
+    margin: 30px 5px;
+
+}
+
+.firstHonorairesContent {
+
+    width: 100%;
+
+}
+
+.honorairesItems {
+
+    flex-direction: column;
+    max-width: 100%;
+
+}
+
+.honorairesItems h4 {
+
+    width: auto;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.h2 .honorairesItems h4 {
+
+    width: auto;
+
+}
+
+
+
+}
+
+@media screen and (max-width: 300px) {
+    
+
+    .honoraireHeader h2 {
+
+        font-size: 35px;
+
+    }
 
 }

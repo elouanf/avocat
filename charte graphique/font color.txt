@@ -1,0 +1,4 @@
+8C183A : Claret color / grenade
+EDE9E9 : Platinium color
+1F1F1F : Eerie black color
+1F1F1F : Dim gray color
