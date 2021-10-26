@@ -1,0 +1,181 @@
+.actuSection {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+
+    padding-top: 50px;
+    
+}
+
+
+.actuSection h1 {
+
+    width: 100%;
+    text-align: center;
+
+    margin: 25px 0;
+
+
+
+}
+
+.mainActuContainer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    max-width: 1200px;
+    
+    height: auto;
+}
+
+
+.itemActuContainer {
+
+    position: relative;
+
+    width: 500px;
+    min-width: 500px;
+    max-width: 400px;
+    min-height: 600px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+    margin: 30px;
+    padding-bottom: 18px;
+
+}
+
+.itemActuImageContainer {
+
+    min-height: 200px;
+    max-height: 200px;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+
+}
+
+.itemActuImageContainer img {
+
+    position: relative;
+    
+
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+
+}
+
+.itemActuTextContainer {
+
+    position: relative;
+
+    padding: 10px;
+    min-height: 300px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.itemActuTextContainer h2 {
+
+    color: #5e1128;
+    text-decoration: underline;
+
+}
+
+.itemActuTextContainer p {
+
+    margin: 20px 0;
+    line-height: 30px;
+    text-align: justify;
+
+}
+
+.itemActuTextContainer a {
+
+    position: absolute;
+    bottom: 0px;
+
+
+
+    text-decoration: none;
+    color: #f1f1f1;
+    background-color: #5e1128;
+    padding: 15px;
+
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: 0.2s ease-in-out;
+
+}
+
+.itemActuTextContainer a:hover {
+
+    background-color: #8C183A;
+    transform: scale(0.90);
+}
+
+.actuSection hr {
+
+    width: 100%;
+
+}
+
+
+/* ___________________________________MEDIA QUERIES_____________________________________ */
+
+
+@media screen and (max-width: 600px) {
+
+    .itemActuContainer {
+
+        width: 100%;
+        min-width: unset;
+
+        
+
+    }
+
+    .itemActuTextContainer {
+
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .itemActuContainer h2 {
+
+        text-align: center;
+
+    }
+
+    
+
+}

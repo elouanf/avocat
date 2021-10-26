@@ -1,0 +1,245 @@
+.honorairesHeader {
+
+    background: url('public/honoraireBG.jpg') center no-repeat;
+    background-size: cover;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+
+
+}
+
+
+.honorairesHeader h1 {
+
+    position: relative;
+
+    background-color: #5e1128;
+    padding: 15px;
+    color: #f1f1f1;
+
+}
+
+.honorairesHeader h1:before {
+
+    content: "";
+    
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+
+    width: 1.5px;
+    height: 50vh;
+    background-color: #5e1128;
+
+}
+
+.honorairesHeader h1:after {
+
+    content: "";
+    
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 20vw ;
+    height: 1.5px;
+    background-color: #5e1128 ;
+
+
+}
+
+.honorairesContainer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.honorairesContainer hr {
+
+    width: 70%;
+    border-color: #e94173;
+    border-bottom: none;
+
+    margin: 25px 0;
+}
+
+
+
+.honoraireContent {
+
+    width: 1000px;
+
+}
+
+.honoraireContent p {
+
+    margin: 35px 0;
+    text-align: center;
+    line-height: 30px;
+
+    padding: 8px;
+
+}
+
+.honorairesContainer strong p {
+
+    text-align: center;
+    padding: 8px;
+
+
+}
+
+.itemHonoraire {
+
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 700px;
+    margin: 15px;
+
+}
+
+.itemHonoraire:nth-of-type(12) {
+
+    padding: 5px 0;
+    border-bottom: 1px solid grey;
+
+}
+
+
+
+.itemHonoraire div:first-of-type p {
+
+    font-weight: bold;
+
+}
+
+.honorairesContainer2 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 0 8px 50px 8px;
+
+    background-color: #5e1128;
+    border-top: 1px solid black;
+    width: 90%;
+
+    margin-top: 15px;
+}
+
+.honorairesContainer2 p {
+
+    width: 850px;
+    margin: 15px 0;
+    color: #b9b8b8;
+   
+}
+
+.honorairesContainer2 ul {
+
+    margin: 10px 0;
+
+}
+
+.honorairesContainer2 li {
+
+    font-size: 22px;
+    margin: 7px 0;
+    color: #b9b8b8;
+
+}
+
+.honorairesContainer2 a {
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    transition: 0.2s ease-in-out;
+
+}
+
+.honorairesContainer2 a:hover {
+
+    color: black;
+   
+
+}
+
+
+.honorairesContainer2 h2, .honorairesContainer2 h3 {
+
+    margin: 20px 0;
+
+    color: #f1f1f1;
+
+}
+
+
+/* _____________________________MEDIA QUERIES______________________________________ */
+
+
+@media screen and (max-width: 750px) {
+
+    .itemHonoraire:nth-of-type(12) {
+
+        margin: 15px 0;
+
+    }
+
+    .itemHonoraire {
+
+        margin: 15px 0;
+
+    }
+
+    
+
+}
+
+@media screen and (max-width: 680px) {
+
+    .itemHonoraire {
+
+        flex-direction: column;
+
+    }
+
+    .itemHonoraire p {
+
+        text-align: center;
+
+    }
+
+    .honorairesContainer2 h2, .honorairesContainer2 h3 {
+
+        text-align: center;
+
+    }
+
+}

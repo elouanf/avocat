@@ -1,0 +1,274 @@
+.homeContact {
+
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+
+    padding-top: 80px;
+
+}
+
+.homeContact h1 {
+
+    position: absolute;
+    top: 5%;
+    left: 8.5%;
+
+   
+
+}
+
+.homeContact h4 {
+
+    margin: 15px 0;
+
+    color: #f1f1f1;
+
+}
+
+
+.homeContact svg {
+
+    width: 40px;
+    height: 40px;
+
+    margin: 20px;
+}
+
+.homeContactItem {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    width: 48%;
+    min-height: 90vh;
+    height: auto;
+
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.homeContactItem:first-of-type {
+
+    background-color: #5e1128;
+   
+
+}
+
+.homeContactItem:last-child {
+
+    background: url("public/contactImg.jpg") center no-repeat;
+    background-size: cover;
+    width: 40%;
+}
+
+.homeContact ul {
+
+    margin: 35px auto;
+
+    width: 80%;
+
+
+}
+
+.homeContact li {
+
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: auto;
+
+    color: rgb(212, 211, 211);
+
+}
+
+.homeContact span:nth-of-type(2), .homeContact span:nth-of-type(3) {
+
+    margin-top: 35px;
+  
+}
+
+
+.homeContact span {
+
+    padding: 15px;
+    background-color: black;
+    border-radius: 3px;
+    
+    color: #f1f1f1;
+    font-size: 20px;
+
+    margin: 0 50px;
+
+    text-align: center;
+    
+    }
+    
+    .homeContact a {
+    
+      text-decoration: none;
+      text-align: center;
+      padding: 15px;
+    
+      background-color: #5e1128;
+      border-bottom-left-radius: 30px;
+      color: #f1f1f1;
+    
+      font-size: 18px;
+      text-decoration: underline;
+    
+      transition: all 0.2s ease-in-out;
+      margin: 0 50px;
+
+      line-height: 25px;
+
+    }
+
+    .homeContact a:hover {
+
+        background-color: black;
+
+    }
+
+
+/* ________________________________________MEDIA QUERIES________________________________ */
+
+
+@media screen and (max-width: 1000px) {
+
+    .homeContact ul {
+
+        width: 100%;
+
+    }
+
+    .homeContact h4 {
+
+        width: 90%;
+        margin: 15px auto;
+
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+
+
+
+    .homeContact {
+
+        flex-direction: column;
+        padding: unset;
+
+    }
+
+    .homeContact h1 {
+
+        position: relative;
+        width: 100%;
+
+        top: unset;
+        left: unset;
+
+    }
+
+    .homeContactItem {
+
+        width: 100%!important;
+
+        padding: 150px 0;
+
+        align-items: center;
+
+    }
+
+    .homeContactItem ul {
+
+        margin: 35px 0;
+        width: 50%;
+
+    }
+
+    .homeContactItem h4 {
+
+        width: 90%;
+
+    }
+
+    .homeContactItem li {
+
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .homeContact .homeContactItem:last-child {
+
+        align-items: center;
+
+    }
+
+    .homeContact svg {
+
+        margin: 20px 5px;
+
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .homeContactItem ul {
+
+        width: 65%;
+
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .homeContactItem ul {
+
+        width: 85%;
+
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .homeContactItem ul {
+
+        width: 100%;
+        
+
+    }
+
+    .homeContactItem ul li {
+
+        justify-content: center;   
+
+    }
+
+    .homeContactItem h4 {
+
+        width: 100%;
+        text-align: center;
+        text-decoration: underline;
+
+    }
+
+}

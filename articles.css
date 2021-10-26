@@ -1,0 +1,211 @@
+.articleContainer {
+
+    padding: 80px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.articleContainer h1 {
+
+    margin: 20px 0px;
+    padding: 10px;
+    color: #f1f1f1;
+    background-color: #5e1128;
+    width: 100%;
+    text-align: center;
+
+}
+
+.articleContainer img {
+
+    width: 99%;
+    height: 40vh;
+
+    object-fit: cover;
+    
+    border: 1px solid #f1f1f1;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+
+    margin: auto;
+
+}
+
+.textContent {
+
+    margin: 20px 0;
+    padding: 50px 0;
+    max-width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+
+}
+
+.textContent > * {
+
+    margin: 10px 0;
+    padding: 10px;
+
+}
+
+.textContent:first-of-type h2 {
+
+    color: #f1f1f1;
+
+}
+.textContent:first-of-type p {
+
+    color: #b9b8b8;
+
+}
+
+.textContent:first-of-type {
+
+    background-color: #5e1128;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+
+}
+
+.textContent:last-of-type h2:first-of-type, .textContent:last-of-type span:first-of-type {
+
+    text-align: center;
+    display: block;
+    width: 100%;
+
+}
+
+.textContent h2,.textContent h3, .textContent h4, .textContent h5 {
+
+    background-color: #5e1128;
+    font-size: 25px;
+
+    color: #f1f1f1;
+
+}
+
+.textContent li {
+
+    font-size: 20px;
+    line-height: 30px;
+
+    margin: 15px 0;
+    padding: 10px 5px;
+
+    color: #e2e2e2;
+    background-color: #5e1128;
+
+}
+
+.textContent strong {
+
+    text-decoration: underline;
+    background-color: #b9b8b8;
+
+    padding: 15px;
+    margin: 8px;
+
+    color: black;
+
+}
+
+.strongP {
+
+    line-height: 60px!important;
+    text-align: center!important    ;
+
+}
+
+.textContent p {
+
+    line-height: 30px;
+    text-align: justify;
+}
+
+.textContent span {
+
+    font-size: 19px;
+    font-weight: bold;
+
+}
+
+.textContent a {
+
+    text-decoration: none;
+    font-weight: bold;
+
+    color: black;
+    text-decoration: underline;
+
+    transition: 0.2s ease-in-out;
+}
+
+.textContent a:hover {
+
+    color: grey;
+    text-decoration: none;
+
+}
+
+.textContent hr {
+
+    margin: 15px 0;
+    padding: unset;
+
+    width: 100%;
+
+}
+
+/* ____________________________MEDIA QUERIES________________________________________________ */
+
+
+@media screen and (max-width: 900px) {
+
+   .textContent {
+
+        max-width: 95%;
+        padding: 0 10px;
+   }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .textContent strong p {
+
+        text-align: center;
+        
+
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .textContent strong {
+
+        background-color: unset;
+        color: #f1f1f1;
+        padding: unset;
+
+
+    }  
+    
+    .strongP {
+        
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+
+    }
+
+
+}
+

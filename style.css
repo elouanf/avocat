@@ -1,12 +1,3 @@
-*, :before, :after {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    scroll-behavior: smooth;
-
-}
 
 body {
 
@@ -14,68 +5,7 @@ body {
 
 }
 
-nav {
 
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 40px;
-
-    background-color: #222;
-
-    z-index: 10;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
-    border-bottom-right-radius: 10px;
-
-    transition: all 0.7s ease-in-out;
-}
-
-.navButton {
-
-    display: none;
-    cursor: pointer;
-
-
-}
-
-nav a {
-
-    height: 100%;
-    line-height: 40px;
-
-    font-size: 22px;
-    color: #f1f1f1;
-    text-decoration: none;
-
-    margin: 10px;
-    padding: 0 8px;
-
-    transition: all 0.2s ease-in-out;
-
-    border: 0.5px solid transparent;
-    
-
-
-}
-
-nav a:hover {
-
-   
-    border-right: 0.5px solid rgb(163, 161, 161);
-    border-left: 0.5px solid rgb(163, 161, 161);
-
-    color: rgb(163, 161, 161);
-
-
-}
 
 
 header {
@@ -86,7 +16,7 @@ header {
     min-height: 100vh;
     height: auto;
 
-    background: url('headerBg.png') center no-repeat;
+    background: url('public/headerBg.png') center no-repeat;
     background-size: cover;
 
     background-color: black;
@@ -102,7 +32,7 @@ header h1 {
     position: relative;
 
     color: white;
-    font-size: 35px;
+
 
     margin-right: 50px;
     margin-left: 50px;
@@ -114,7 +44,7 @@ header h1 {
 header h2 {
 
     color: rgb(146, 143, 143);
-    font-size: 22px;
+
     font-weight: lighter;
     margin: 0 50px 20px 50px;
 
@@ -242,7 +172,6 @@ header h2 {
 
 .aboutLink {
 
-    font-size: 22px;
     color: white;
     text-decoration: none;
   
@@ -285,9 +214,6 @@ header h2 {
 
 .aboutSection h2 {
 
-font-size: 30px;
-
-
 width: 60%;
 text-align: center;
 
@@ -299,7 +225,7 @@ color: #cccbcb;
 
 .aboutSection h3 {
 
-    font-size: 22px;
+    
     color: #979696;
     
     width: 60%;
@@ -313,7 +239,7 @@ color: #cccbcb;
 .aboutSection p {
 
     
-    font-size: 21px;
+
     margin: 25px 0;
 
     line-height: 30px;
@@ -361,7 +287,7 @@ padding-right: 20px;
 
 .aboutMission h4 {
 
-    font-size: 26px;
+
     height: auto;
 
     color: #c9c4c4;
@@ -375,12 +301,6 @@ padding-right: 20px;
 
 
 }
-
-
-
-
-
-
 
 
 
@@ -410,11 +330,24 @@ padding-right: 20px;
 
 .skills h2 {
 
-    font-size: 35px;
+
     color: rgb(44, 44, 44);
 
     margin: 45px;
     
+
+}
+
+.skills img {
+
+    width: 600px;
+    max-width: 90%;
+    height: 200px;
+
+    object-fit: cover;
+
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4),
+                -1px -1px 4px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -434,7 +367,7 @@ height: auto;
 .skillContainer {
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -446,55 +379,37 @@ height: auto;
     
 
     margin: 20px 15px;
+    padding: 15px;
 
 
-    background: linear-gradient(to right, white, 32%, #5e1128 32%);
+
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5),
                 -1px -1px 8px rgba(255, 255, 255, 0.3);
 
                 border-radius: 5px;
 }
 
-.skillContainer:nth-child(even) {
-
-    background: linear-gradient(to right, #5e1128, 68%,white  68%);
-
-}
-
-.lastSkill {
-
-    
-    background: linear-gradient(to right, white, 32%, #5e1128 32%)!important;
-
-}
-
-.skillContainer h3, .skillContainer p {
-
-    color: white;
-
-}
-
-
 .skillTextContent {
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 
-    width: 50%;
+    width: 70%;
     height: auto;
 
-    margin: 10px 10px;
+ 
 }
 
 .skillTextContent h3 {
 
-    font-size: 28px;
     text-decoration: underline;
 
     margin: 15px 0;
     min-height: 70px;
+    line-height: 70px;
     height: auto;
 }
 
@@ -516,200 +431,6 @@ height: auto;
 
 }
 
-.honoraires {
-
- padding: unset;
-
- display: flex;
- flex-direction: row;
- justify-content: center;
- align-items: flex-start;
- flex-wrap: wrap;
-
-}
-
-.honoraireHeader {
-
-    position: relative;
-
-    width: 100%;
-    min-height: 35vh;
-    height: auto;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.honoraireHeader img {
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    border-top: 1px solid white;
-
-}
-
-.honoraireHeader h2 {
-
-    position: relative;
-
-    font-size: 45px;
-    color: white;
-    padding: 15px;
-
-    background-color: black;
-    box-shadow: 2px 2px 4px solid rgba(255, 255, 255, 0.8),
-                -1px -1px 4px solid rgba(255, 255, 255, 0.8);
-
-}
-
-.honorairesItemsContainer {
-
-    max-width: 98%;
-
-}
-
-
-.honorairesItems {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-
-    margin: 15px 0;
-
-    
-}
-
-
-.honorairesItems h4 {
-
-    font-size: 20px;
-    width: 360px;
-
-    background-color: white;
-    min-height: 50px;
-    height: auto;
-    line-height: 50px;
-    padding-left: 10px;
-
-
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-    
-}
-
-.honorairesItems p {
-
-    background-color: #8C183A;
-    color: #f1f1f1;
-    font-size: 18px;
-    font-weight: bold;
-
-    padding: 10px;
-
-    width: 180px;
-    height: auto;
-
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-
-}
-
-.h2 .honorairesItems h4 {
-
-    width: 340px;
-
-}
-
-.h2 .honorairesItems p {
-
-    width: 200px;
-
-    
-
-}
-
-.i2 h4, .i2 p {
-
-    min-height: 70px;
-    line-height: 35px;
-    vertical-align: bottom;
-    background-color: white;
-    color: black;
-    font-size: 20px;
-}
-
-.i2 h4 {
-
-    padding: 20px 10px;
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-
-}
-
-.firstHonorairesContainer h5 {
-
-    font-size: 22px;
-    text-decoration: underline;
-
-    margin: 10px 0;
-    color: #f1f1f1;
-
-}
-
-
-.firstHonorairesContainer {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-        
-    max-width: 98%;
-
-}
-
-.firstHonorairesContent {
-
-    width: 600px;
-    height: auto;
-    margin: 25px 45px;
-    padding: 0 15px;
-
-    background-color: #5e1128;
-
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-.firstHonorairesContent p {
-
-    font-size: 20px;
-    line-height: 30px;
-    color: #c9c4c4;
-
-}
-
-.firstHonorairesContainer li {
-
-    font-size: 20px;
-    color: #c9c4c4;
-
-}
-
-.firstHonorairesContent hr {
-
-    margin: 20px 0;
-
-}
 
 .firstSpace {
 
@@ -732,8 +453,7 @@ height: auto;
 
 
 
-.contact {
-    background-image: linear-gradient(112.5deg, rgb(185,185,185) 0%, rgb(185,185,185) 10%,rgb(185,185,185) 10%, rgb(185,185,185) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(157.5deg, rgb(185,185,185) 0%, rgb(185,185,185) 10%,rgb(185,185,185) 10%, rgb(185,185,185) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(135deg, rgb(185,185,185) 0%, rgb(185,185,185) 10%,rgb(185,185,185) 10%, rgb(185,185,185) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(90deg, rgb(185,185,185),rgb(146,146,146)); background-blend-mode:overlay,overlay,overlay,normal;
+.homeContact {
 
     display: flex;
     flex-direction: row;
@@ -741,245 +461,150 @@ height: auto;
     align-items: center;
     flex-wrap: wrap;
 
-}
 
-.contact h3 {
-
-    width: 100%;
-    text-align: center;
-    font-size: 45px;
-
-}
-
-.infoContact {
-
+    top: -40px;
+  
+    min-height: 70vh;
+    height: auto;
+  
+  
+  }
+  
+  .homeContactItem {
+  
+    width: 50%;
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 600px;
-
-    background-color: white;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-}
-
-.infoContact ul {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-
-    width: 100%;
-
-}
-
-.infoContact ul li {
-
-    list-style-type: none;
-    font-size: 20px;
-
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-
-    margin: 20px;
-}
-
-.infoContact ul li:first-child {
-
-   font-weight: bold;
-    font-size: 25px;
-    text-align: center;
-
-    color: grey;
-}
-
-
-.infoContact img {
-
-    width: 50px;
-    height: 50px;
-
-    margin: 0 10px;
-
-}
-
-.infoContact hr {
-
-    width: 100%;
-
-}
-
-.infoContact ul li i {
-
-    font-size: 18px;
-
-}
-
-.parkingList img {
-
-    width: 30px;
-    height: 30px;
-
-}
-
-.avocatForm {
-
+  
+    height: 70vh;
+  
+    border-bottom: 1px solid grey;
+  
+  }
+  
+  .homeContactItem:first-of-type {
+  
+    background-color: #5e1128;
+  
+  }
+  
+  .homeContactItem:last-of-type {
+  
+  background: url('public/contactBG.jpg') center no-repeat;
+  background-size: cover;
+  
+  
+  } 
+  
+  .homeContact ul {
+  
     width: 500px;
-    min-height: 400px;
-    height: auto;
-
-    background-color: black;
-
-}
-
-.avocatLink {
-
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    margin: 40px;
-
-}
-
-
-.avocatForm h5 {
-
-    color: white;
-    font-size: 22px;
-
-}
-
-.avocatForm a  {
-
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-
-
-    min-height: 35px;
-    height: auto;
-    line-height: 35px;
-    margin: 20px 0;
-    padding: 0 10px;
-
-    background-color: #5e1128;
-    border-radius: 25px;
-
-    align-self: center;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    transition: all 0.4s ease-in-out;
-
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
-
-}
-
-.avocatLink img {
-
-    width: 30px;
-    height: 20px;
-
-    margin: 0 20px;
-
-}
-
-.avocatForm a:hover {
-
-    transform: scale(0.99);
-
-    background-color: black;
-    color: white;
-    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.3),
-                -1px -1px 3px rgba(255, 255, 255, 0.3);
-
-}
-
-footer {
-
-    min-height: 17vh;
-    height: auto;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    background-color: #5e1128;
-
-}
-
-.footerRowContainer {
-
+    max-width: 100%;
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-
-    margin: 15px;
-
-}
-
-.footerRowContainer:nth-of-type(2) {
-   
-    justify-content: flex-start;
-   
-    min-height: 100px;
-    height: auto;
-}
-
-
-footer li {
-
+  
+    margin: 15px 0;
+  
+  }
+  
+  .homeContact ul li {
+  
     list-style-type: none;
-
-    font-size: 20px;
-    margin: 8px 0;
-    color: white;
-
-}
-
-footer h3 {
-
-    font-size: 22px;
     color: #f1f1f1;
 
-}
-
-footer img {
-
-    width: 20px;
-    height: 20px;
-
-    margin-right: 10px;
-
-}
-
-footer a {
-
-
-  font-size: 20px;
-  color: white;
-  margin: 0 15px;
-}
+  
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  
+  .homeContact h4 {
+  
+    color: grey;
+    margin: 20px 0;
+  
+  }
+  
+  .homeContact span {
+  
+  padding: 15px;
+  background-color: black;
+  border-radius: 3px;
+  
+  color: #f1f1f1;
+ 
+  
+  }
+  
+  .homeContact a {
+  
+    text-decoration: none;
+    padding: 15px;
+  
+    background-color: #5e1128;
+    border-bottom-left-radius: 30px;
+    color: #f1f1f1;
+  
+ 
+    text-decoration: underline;
+  
+  }
+  
+  .homeContact span, .homeContact a {
+  
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    
+  
+  }
+  
+  .homeContact span:nth-of-type(2), .homeContact span:nth-of-type(3) {
+  
+    margin-top: 35px;
+  
+  }
+  
+  .homeContact svg {
+  
+    width: 30px;
+    height: 30px;
+  
+    margin: 0 15px;
+  
+  }
 
 
 /* _______________________________________________MEDIA QUERIES_________________________________________ */
+
+
+@media screen and (max-width: 1120px) {
+
+    .homeContact{
+  
+      flex-direction: column;
+  
+  
+    }
+  
+    .homeContactItem {
+  
+      width: 100%;
+  
+    }
+  
+  }
+
 
 
 @media screen and (max-width: 1100px) {
@@ -1024,6 +649,11 @@ footer a {
 
     }
 
+    .homeContact h4 {
+
+        margin: 20px;
+
+    }
 
 
 }
@@ -1031,70 +661,11 @@ footer a {
 @media screen and (max-width: 680px) {
 
 
-    nav {
-
-        flex-direction: column;
-        justify-content: center;
-        width: 80%;
-        height: 100%;
-
-        background-color: #f1f1f1;
-        
-        transform: translateX(-100%);
-
-    }
-
-    .show {
-
-        transform: translateX(0);
-
-    }
-
-    nav a {
-
-        color: black;
-        height: 80px;
-        line-height: 80px;
-
-        border-bottom: 1px solid grey;
-    }
-
-    .navButton {
-
-        display: block;
-
-        position: fixed;
-        top: 10px;
-        left: 10px;
-
-        z-index: 5;
-        background-color: transparent;
-        border: none;
-
-        
-    transition: all 0.7s ease-in-out;
-
-    }
-
-    .burgerShow {
-
-       left: 85%;
-
-    }
-
-
-
-    .navButton img {
-
-
-        width: 60px;
-        height: 60px;
-
-    }
+    
 
     header h1 {
 
-        font-size: 30px;
+
         margin: 0 20px;
 
     }
@@ -1107,7 +678,7 @@ footer a {
 
     .aboutSection h2 {
 
-        font-size: 27px;
+
         width: 85%;
 
     }
@@ -1132,21 +703,10 @@ footer a {
 
     }
 
-    .skillContainer:nth-child(even) {
-
-        background: linear-gradient(to top, white, 46%, #5e1128 46%);
-
-    }
-
-    .lastSkill {
-
-
-        background: linear-gradient(to bottom, white, 44%, #5e1128 44%)!important;
-    }
 
     .skills h2 {
 
-        font-size: 30px;
+
         margin: 40px 0px;
         text-decoration: underline;
 
@@ -1174,11 +734,17 @@ footer a {
         text-align: center;
         align-self: center;
 
+        color: #f1f1f1;
+
+        min-height: 40px;
+        height: auto;
+        line-height: 40px;
+
     }
 
     .skillTextContent p {
 
-        font-size: 21px;
+
         line-height: 32px;
 
     }
@@ -1248,24 +814,6 @@ footer a {
 
     }
 
-    .footerRowContainer {
-
-        align-items: center;
-
-    }
-
-    footer h3 {
-
-        font-size: 28px;
-        margin: 20px 0;
-
-    }
-
-    footer li {
-
-        text-align: center;
-
-    }
  
  }
 
@@ -1287,6 +835,21 @@ footer a {
         bottom: 5%;
 
     }
+
+        .homeContact ul h4{
+      
+          align-self: center;
+          text-decoration: underline;
+      
+        }
+      
+        .homeContact ul li, .homeContact h4 {
+      
+          text-align: center;
+      
+        }
+      
+      
 
 
 }
@@ -1346,16 +909,5 @@ color: #c9c4c4;
 }
 
 
-
-}
-
-@media screen and (max-width: 300px) {
-    
-
-    .honoraireHeader h2 {
-
-        font-size: 35px;
-
-    }
 
 }
