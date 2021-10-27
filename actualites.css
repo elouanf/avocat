@@ -10,7 +10,6 @@
     height: auto;
     width: 100%;
 
-    padding-top: 50px;
     
 }
 
@@ -19,10 +18,21 @@
 
     width: 100%;
     text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
 
-    margin: 25px 0;
+    min-height: 200px;
+    height: auto;
+    background-color: #8C183A;
 
+    margin-bottom: 20px;
 
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 
 }
 
@@ -146,6 +156,11 @@
 .actuSection hr {
 
     width: 100%;
+    border-color: #8C183A;
+    border-bottom: none;
+    border-top: 1px solid #8C183A;
+
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 
 }
 
