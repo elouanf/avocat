@@ -126,12 +126,20 @@ header h2 {
 
 }
 
-
-.aboutLink {
+.indexLink {
 
     position: absolute;
-    bottom: 25%;    
+    bottom: 20%;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+}
+
+.aboutLink {
     
     width: 180px;
     height: 55px;
@@ -148,6 +156,7 @@ header h2 {
 
     animation: buttonAnim 5s forwards;
    
+    margin: 5px;
     
 }
 
@@ -168,6 +177,7 @@ header h2 {
 }
 
 }
+
 
 
 .aboutLink {
@@ -225,16 +235,16 @@ color: #cccbcb;
 
 .aboutSection h3 {
 
-    
     color: #979696;
     
-    width: 60%;
+    width: 100%;
     text-align: center;
-    align-self: flex-end;
-    }
+    
+    margin: 7px 0 20px 0;
 
+    font-size: 18px;
 
-
+}
 
 .aboutSection p {
 
@@ -607,7 +617,7 @@ height: auto;
 
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
 
 
     header {
@@ -628,11 +638,7 @@ height: auto;
 
     }
 
-    .aboutLink {
-
-        bottom: 10%;
-    
-       }
+   
 
 
 }
@@ -672,7 +678,7 @@ height: auto;
 
     .headerIcon {
 
-        width: 150px;
+        width: 200px;
 
     }
 
@@ -908,6 +914,58 @@ color: #c9c4c4;
 
 }
 
+}
 
+@media screen and (max-width: 400px) {
+
+    .indexLink {
+
+        flex-direction: column;
+
+    }
+
+    .aboutLink {
+
+        width: 150px;
+        height: 40px;
+
+        line-height: 40px;
+
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+
+    .headerIcon {
+
+        width: 150px;
+
+    }
+    
+
+}
+
+@media screen and (max-width: 300px) {
+
+  
+    
+.indexLink {
+
+    bottom: 10%;
+
+}
+
+}
+
+
+
+@media screen and (max-width: 200px) {
+
+    header h1 {
+
+        margin: 0 5px;
+
+    }
 
 }
